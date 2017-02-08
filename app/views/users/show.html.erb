@@ -8,8 +8,9 @@
 
 <% @user.reservations.each do |reservation| %>
  <p>
-   <%= reservation.restaurant.name %>
+   <%= reservation.restaurant_id %>
     <%= reservation.res_time %>
+      <%= reservation.date %>
  </p>
 
  <% end %>

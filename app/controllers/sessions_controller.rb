@@ -12,8 +12,8 @@ class SessionsController < ApplicationController
 
       # If both of those evaluate to 'true', we create a key-value pair in the session hash. ':user_id' is the key and the user's id is the value
       session[:user_id] = user.id
-      flash[:notice] = "Logged in!"
-      redirect_to products_url
+      flash[:notice] = "Hello #{user.name}Logged in!"
+      redirect_to restaurants_url
     else
       flash.now[:alert] = 'Invalid email or password'
       render :new
