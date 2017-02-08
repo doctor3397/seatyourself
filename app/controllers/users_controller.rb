@@ -8,7 +8,7 @@ class UsersController < ApplicationController
 
      if @user.save
        flash[:notice] = "Signed up!"
-       redirect_to products_url
+       redirect_to restaurants_url
      else
        flash.now[:error] = 'Sorry, try again!'
        render :new
