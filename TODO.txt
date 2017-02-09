@@ -1,14 +1,11 @@
 TO DO
-migration:
 
-- place LOG IN on restaurant show page
-- add LOG OUT
+-images
 
 on restaurant show page:
-- display for "capacity remaining"
+- display for "capcity remaining"
 
 - create link(s) on restaurant index page (connect to show pages)
-- change restaurants schema to include URL image (above)
 
  add classes (for styling)
 - verify links
@@ -16,4 +13,3 @@ on restaurant show page:
 - re-populate database
 
 - fix reservation display *IN USER ACCOUNT*
--

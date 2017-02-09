@@ -11,7 +11,7 @@ Restaurant.create(
   city: "Richmond Hill",
   capcity: "18",
   cuisine: "African",
-  image: "http"
+  image: ""
   )
 
   Restaurant.create(
@@ -19,7 +19,7 @@ Restaurant.create(
     city: "Queen West",
     capcity: "24",
     cuisine: "Asian Fusion",
-    image: "http"
+    image: ""
   )
 
     Restaurant.create(
@@ -27,7 +27,7 @@ Restaurant.create(
       city: "Richmond Hill",
       capcity: "18",
       cuisine: "African",
-      image: "http"
+      image: ""
       )
 
       Restaurant.create(
@@ -35,7 +35,7 @@ Restaurant.create(
         city: "The Beaches",
         capcity: "30",
         cuisine: "Greek",
-        image: "http"
+        image: ""
       )
 
       Restaurant.create(
@@ -43,7 +43,7 @@ Restaurant.create(
         city: "Etobicoke",
         capcity: "33",
         cuisine: "English",
-        image: "http"
+        image: ""
       )
 
       Restaurant.create(
@@ -51,5 +51,5 @@ Restaurant.create(
         city: "North York",
         capcity: "14",
         cuisine: "BBQ and Grill",
-        image: "http"
+        image: ""
       )
