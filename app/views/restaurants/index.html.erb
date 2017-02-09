@@ -1,12 +1,13 @@
 <% @restaurants.each do |restaurant| %>
+
 <%= link_to restaurant.name, restaurant_path(restaurant) %>
 
 <%= image_tag restaurant.image %>
 
  <div>
-   
-   <p>City: <%= restaurant.city %></p>
-   <p>Cuisine: <%= restaurant.cuisine %></p>
+
+   <p><%= restaurant.city %></p>
+   <p><%= restaurant.cuisine %></p>
 
  </div>
 

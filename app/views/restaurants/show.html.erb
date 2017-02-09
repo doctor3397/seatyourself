@@ -10,6 +10,7 @@
 
 
 <div class="Book">
+  <% if session[:user_id] %>
 
   <h2> Book This Restaurant</h2>
 
@@ -31,6 +32,10 @@
      <%= f.submit %>
     </div>
 
+    <%end%>
+
+    <% else %>
+    <p> Please <a href="/users/new"> Sign Up</a> or <a href="/sessions/new">Log In</a> to book this restaurant </p>
   <% end %>
 
 </div>
