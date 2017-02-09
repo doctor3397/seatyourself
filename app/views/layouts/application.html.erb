@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Seatyourself</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
+
 <header>
      <a href="/restaurants">FOOD TRUCKZ</a>
-   </header>
-<body>
+</header>
 
+<% if current_user %>
+  <p>Hello <%= current_user.email %>
+  <%= link_to 'Log Out', sessions_path, method: :delete %>
+  </p>
+  <% else %>
+  <p><%= link_to 'Log In', new_sessions_path %></p>
+<% end %>
+
+<body>
   <% if flash.any? %>
      <% flash.each do |key, value| %>
        <p class='<%= key %>'>
@@ -22,4 +32,5 @@
 <%= yield %>
 
 </body>
+
 </html>
