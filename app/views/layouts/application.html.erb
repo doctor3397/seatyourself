@@ -6,6 +6,9 @@
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
+<header>
+     <a href="/restaurants">FOOD TRUCKZ</a>
+   </header>
 <body>
 
   <% if flash.any? %>
@@ -15,7 +18,7 @@
        </p>
      <% end %>
    <% end %>
-   
+
 <%= yield %>
 
 </body>

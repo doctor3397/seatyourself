@@ -1,0 +1,12 @@
+TO DO
+
+- add CUISINE to restaurants
+- place LOG IN on restaurant show page
+- add LOG OUT
+- create link(s) on restaurant index page (connect to show pages)
+- change restaurants schema to include URL image (above)
+- flash alert for "capacity remaining"
+- add classes (for styling)
+- remove Timeslot for schema
+- verify links
+- remove test shit from database
