@@ -6,50 +6,46 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Restaurant.create(
+puts "beginning seed file"
+
+Restaurant.create!(
   name: "Kal and Mooy",
   city: "Richmond Hill",
   capcity: "18",
   cuisine: "African",
-  image: ""
+  image: "1.png"
   )
 
-  Restaurant.create(
+  Restaurant.create!(
     name: "Me-N-U",
     city: "Queen West",
     capcity: "24",
     cuisine: "Asian Fusion",
-    image: ""
+    image: "asian_foodtruck2.png"
   )
 
-    Restaurant.create(
-      name: "Kal and Mooy",
-      city: "Richmond Hill",
-      capcity: "18",
-      cuisine: "African",
-      image: ""
-      )
-
-      Restaurant.create(
+      Restaurant.create!(
         name: "Blue Donkey",
         city: "The Beaches",
         capcity: "30",
         cuisine: "Greek",
-        image: ""
+        image: "blue_donkey_foodtruck1.png"
       )
 
-      Restaurant.create(
+      Restaurant.create!(
         name: "Feisty Jack",
         city: "Etobicoke",
         capcity: "33",
         cuisine: "English",
-        image: ""
+        image: "churros_foodtruck6.png"
       )
 
-      Restaurant.create(
+      Restaurant.create!(
         name: "Randy's Curbside",
         city: "North York",
         capcity: "14",
         cuisine: "BBQ and Grill",
-        image: ""
+        image: "cupcakes_foodtruck2.png"
       )
+
+  puts "#{Restaurant.count} restaurants created"

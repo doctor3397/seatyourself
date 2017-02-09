@@ -4,12 +4,3 @@ TO DO
 
 on restaurant show page:
 - display for "capcity remaining"
-
-- create link(s) on restaurant index page (connect to show pages)
-
- add classes (for styling)
-- verify links
-
-- re-populate database
-
-- fix reservation display *IN USER ACCOUNT*
