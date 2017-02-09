@@ -1,3 +1,7 @@
+<h1>Welcome to Food-Truckz!</h1>
+<h3>Toronto's destination for off-menu specials</h3>
+<h4>Our Food Truckz produce a new special daily for our clients only. Each meal remains a mystery until you open your box. Reserve today to experience Food-Truckz!</h4>
+
 <% @restaurants.each do |restaurant| %>
   <%= link_to restaurant_path(restaurant) do %>
     <%= image_tag restaurant.image %>

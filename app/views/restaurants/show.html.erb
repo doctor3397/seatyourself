@@ -3,29 +3,30 @@
   <div>
    <h3><%= @restaurant.name %></h3>
    <p><%= @restaurant.city %></p>
-   <p><%= @restaurant.capcity %></p>
-
+   <p><%= @restaurant.cuisine %></p>
+   <p><%= @restaurant.meals_remaining(Date.today) %></p>
 
  </div>
+
 
 
 <div class="Book">
   <% if session[:user_id] %>
 
-  <h2> Book This Restaurant</h2>
+  <h2> Reserve the special of the day</h2>
 
   <%= form_for(@reservation) do |f| %>
 
     <%= f.hidden_field :restaurant_id %>
 
     <div class="field">
-     <%= f.label :party_size %><br />
+     <%= f.label :quantity %>
      <%= f.text_field :party_size %>
     </div>
 
     <div class="field">
-     <%= f.label :date %><br />
-     <%= f.text_field :date %>
+     <!-- <%= f.label :date %><br /> -->
+     <!-- <%= f.text_field :date, placeholder: "YYYY-MM-DD" %> -->
     </div>
 
     <div class="actions">
