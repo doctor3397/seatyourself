@@ -8,6 +8,8 @@
 
 puts "beginning seed file"
 
+Restaurant.destroy_all
+
 Restaurant.create!(
   name: "Kal and Mooy",
   city: "Richmond Hill",
@@ -21,7 +23,7 @@ Restaurant.create!(
     city: "Queen West",
     capcity: "24",
     cuisine: "Asian Fusion",
-    image: "asian_foodtruck2.png"
+    image: "asian_foodtruck3.png"
   )
 
       Restaurant.create!(
@@ -37,7 +39,7 @@ Restaurant.create!(
         city: "Etobicoke",
         capcity: "33",
         cuisine: "English",
-        image: "churros_foodtruck6.png"
+        image: "fiesty_jack_foodtruck2.png"
       )
 
       Restaurant.create!(
@@ -45,7 +47,15 @@ Restaurant.create!(
         city: "North York",
         capcity: "14",
         cuisine: "BBQ and Grill",
-        image: "cupcakes_foodtruck2.png"
+        image: "grill_foodtruck5.png"
+      )
+
+      Restaurant.create!(
+        name: "Cupcake Diner",
+        city: "North York",
+        capcity: "14",
+        cuisine: "Cupcakes",
+        image: "cupcakes_foodtruck4.png"
       )
 
   puts "#{Restaurant.count} restaurants created"
