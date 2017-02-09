@@ -1,15 +1,19 @@
 TO DO
+migration:
 
-- add CUISINE to restaurants
 - place LOG IN on restaurant show page
 - add LOG OUT
+
+on restaurant show page:
+- display for "capacity remaining"
+
 - create link(s) on restaurant index page (connect to show pages)
 - change restaurants schema to include URL image (above)
-- flash alert for "capacity remaining"
-- add classes (for styling)
-- remove Timeslot for schema
+
+ add classes (for styling)
 - verify links
-- remove test shit from database
+
 - re-populate database
+
 - fix reservation display *IN USER ACCOUNT*
 -
