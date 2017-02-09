@@ -10,3 +10,6 @@ TO DO
 - remove Timeslot for schema
 - verify links
 - remove test shit from database
+- re-populate database
+- fix reservation display *IN USER ACCOUNT*
+-
