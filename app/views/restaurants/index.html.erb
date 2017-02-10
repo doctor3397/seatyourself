@@ -1,19 +1,27 @@
+<div class="title">
 <h1>Welcome to Food-Truckz!</h1>
+</div>
+<div class="title_dets">
 <h3>Toronto's destination for off-menu specials</h3>
 <h4>Our Food Truckz produce a new special daily for our clients only. Each meal remains a mystery until you open your box. Reserve today to experience Food-Truckz!</h4>
+</div>
+<div class="main">
+
 
 <% @restaurants.each do |restaurant| %>
-  <%= link_to restaurant_path(restaurant) do %>
+<div class="resto">
+    <%= link_to restaurant_path(restaurant) do %>
     <%= image_tag restaurant.image %>
+
   <% end %>
+<div class="resto_name">
+
 
   <%= link_to restaurant.name, restaurant_path(restaurant) %>
+</div>
+   <p class="city"><%= restaurant.city %></p>
+   <p class="cuisine"><%= restaurant.cuisine %></p>
 
- <div>
-
-   <p><%= restaurant.city %></p>
-   <p><%= restaurant.cuisine %></p>
-
- </div>
-
+</div>
 <% end %>
+</div>

@@ -12,15 +12,15 @@
     <%= link_to image_tag("logo.png"), :controller => 'restaurants'%>
 </header>
 
+
 <% if current_user %>
-  <p>Hello <%= current_user.email %>
+  <p class="welcome"> <%= current_user.email %>
   <%= link_to 'Log Out', sessions_path, method: :delete %>
   </p>
   <% else %>
   <p><%= link_to 'Log In', new_sessions_path %></p>
   <p><%= link_to 'Sign Up', new_user_path %></p>
 <% end %>
-
 <body>
   <% if flash.any? %>
      <% flash.each do |key, value| %>

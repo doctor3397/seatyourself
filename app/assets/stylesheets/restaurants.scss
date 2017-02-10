@@ -1,3 +1,32 @@
 // Place all the styles related to the restaurants controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.page_image img {
+  width: 40%;
+  float: left;
+  margin-top: 100px;
+  margin-left: 20px;
+}
+
+.reso_dets {
+  width: 20%;
+  float: left;
+  margin-top: 120px;
+  margin-left: 20px;
+  border: 1px solid lightgrey;
+  text-align: center;
+
+}
+.book {
+
+  width: 30%;
+  float: left;
+  margin-top: 120px;
+  margin-left: 20px;
+  border: 1px solid lightgrey;
+  text-align: center;
+}
+
+.field {
+  text-align: left;
+}

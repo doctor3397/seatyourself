@@ -13,3 +13,106 @@
  *= require_tree .
  *= require_self
  */
+
+ html {
+   box-sizing: border-box;
+   font-family: Helvetica Neue;
+   font-size: 100%
+ }
+
+body {
+  margin: 0;
+}
+ header {
+   width: 100%;
+   background-color: #fff;
+   margin: 0px;
+   position: fixed;
+   height: 85px;
+   top: 0;
+ }
+
+header img {
+   width: 150px;
+   margin: 5px auto 0 auto;
+   top: 10px;
+   left: 5px;
+  }
+
+h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+ /*h3, h4 {
+    text-align: center;
+    max-width: 83%;
+    margin: 10px auto;
+  }
+  h3 {
+    clear: both;*/
+  }
+
+  .welcome {
+    clear: both;
+    position: fixed;
+    right: 5px;
+    top: 15px;
+
+  }
+p.welcome {
+  position: fixed;
+right: 0;
+padding-right: 10px;
+  top: 15px;
+}
+  .title {
+    clear: both;
+    text-align: center;
+
+  }
+
+  .resto img {
+    height: 250px;
+    max-width: 100%;
+    overflow: hidden;
+
+  }
+    .resto {
+      border: 1px solid lightgrey;
+      width: 32%;
+      display: inline-block;
+      margin-top: 5px;
+    }
+
+    .city, .cuisine {
+      text-align: center;
+      font-weight: 600;
+      line-height: 7px;
+    }
+
+    .resto_name {
+      text-align: center;
+      margin-top: 6px;
+      margin-bottom: 3px;
+
+
+    }
+
+    .resto_name a {
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 150%;
+
+    }
+
+    .main {
+      text-align: center;
+    }
+
+    .title_dets {
+      text-align: center;
+    
+    }
+
+
+    }

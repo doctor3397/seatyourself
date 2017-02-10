@@ -1,16 +1,23 @@
-<div>
- <h3>Account</h3>
- <p>Name: <%= @user.name %></p>
- <p>Email: <%= @user.email %></p>
+<div class="user_info">
+
+ <h3 class="account">My Account</h3>
+ <p><%= @user.name %></p>
+ <p><%= @user.email %></p>
+
 </div>
 
-<h3>reservations</h3>
+<h3 class="reso">reservations</h3>
+
+
 
 <% @user.reservations.each do |reservation| %>
+<div class="reso_info">
  <p>
    <%= reservation.restaurant.name %>
       <%= reservation.date %>
       <%= reservation.party_size%> people
  </p>
+
+ </div>
 
  <% end %>
