@@ -1,4 +1,7 @@
 class ReservationsController < ApplicationController
+
+
+
   def index
     @reservations = Reservation.all
   end
@@ -12,13 +15,22 @@ class ReservationsController < ApplicationController
   end
 
   def create
+    puts params
+
     reservation = Reservation.new(reservation_params)
+    #reservation.date = Date.strptime('%Y-%m-d')
     reservation.user = User.find(session[:user_id])
-    if reservation.save
-      redirect_to user_path(reservation.user)
-    else
-      redirect_to restaurant_path(params[:reservation][:restaurant_id])
-    end
+    restaurant = Restaurant.find(params[:reservation][:restaurant_id])
+    if reservation.party_size < restaurant.meals_remaining(params[:reservation][:date])
+       if reservation.save
+        redirect_to user_path(reservation.user)
+      else
+        redirect_to restaurant_path(params[:reservation][:restaurant_id])
+      end
+     else
+       flash[:error] = "Quantity too high! Do not exceed"
+       redirect_to restaurant_path(params[:reservation][:restaurant_id])
+     end
   end
 
   def edit
